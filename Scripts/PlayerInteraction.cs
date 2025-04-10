@@ -159,129 +159,124 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    
     void TryInteract()
+{
+    RaycastHit hit;
+    // Check if we're using a tool on a loose/fixed item
+    if (carriedItem != null)
     {
-        RaycastHit hit;
-        // Check if we're using a tool on a loose/fixed item
-        if (carriedItem != null)
+        if (carriedItem.GetComponent<InteractibleItem>()?.isTool == true)
         {
-            if (carriedItem.GetComponent<InteractibleItem>()?.isTool == true)
+            if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactRange))
             {
-                if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactRange))
+                InteractibleItem targetItem = hit.collider.GetComponent<InteractibleItem>();
+                if (targetItem != null)
                 {
-                    InteractibleItem targetItem = hit.collider.GetComponent<InteractibleItem>();
-                    if (targetItem != null)
-                    {
-                        InteractibleItem tool = carriedItem.GetComponent<InteractibleItem>();
-                        
-                        // Try to tighten if loose
-                        if (targetItem.currentState == AttachmentState.Loose)
-                        {
-                            if (targetItem.TryTighten(tool.toolType))
-                            {
-                                Debug.Log($"Tightened {targetItem.gameObject.name}");
-                                return;
-                            }
-                        }
-                        // Try to loosen if fixed
-                        else if (targetItem.currentState == AttachmentState.Fixed)
-                        {
-                            if (targetItem.TryLoosen(tool.toolType))
-                            {
-                                Debug.Log($"Loosened {targetItem.gameObject.name}");
-                                return;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-
-        if (carriedItem != null)
-        {
-            // Handle dropping/attaching of carried item
-            if (isNearAttachmentPoint && currentAttachmentPoint != null)
-            {
-                InteractibleItem item = carriedItem.GetComponent<InteractibleItem>();
-                if (item != null && currentAttachmentPoint.acceptedType == item.attachmentType)
-                {
-                    AttachItemToPoint(item, currentAttachmentPoint);
-                    return;
-                }
-            }
-            
-            DropCarriedItem();
-            lastDropTime = Time.time;
-            return;
-        }
-
-        if (Time.time - lastDropTime < dropCooldown) return;
-
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactRange))
-        {
-            InteractibleItem item = hit.collider.GetComponent<InteractibleItem>();
-            if (item != null)
-            {
-                // First check if the item can be interacted with
-                if (!item.canBePickedUp)
-                {
-                    if (item.isPushable)
-                    {
-                        // Push the item in the direction you're looking
-                        Vector3 pushDirection = Camera.main.transform.forward;
-                        item.Push(pushDirection);
-                    }
-                    return;
-                }
-
-                // Check if this is part of an assembled item first
-                if (IsPartOfAssembledItem(item))
-                {
-                    Transform root = item.transform.root;
-                    HandleAssemblyPickup(root.gameObject);
-                    return;
-                }
-
-                // If the item has no attachment type, treat it as a regular pickup
-                if (string.IsNullOrEmpty(item.attachmentType))
-                {
-                    HandleItemPickup(item);
-                    return;
-                }
-
-                // Check state before allowing pickup
-                if (item.currentState == AttachmentState.Fixed)
-                {
-                    Debug.Log("Cannot pick up fixed item - must be loosened first");
-                    return;
-                }
-
-                if (item.currentState == AttachmentState.Loose)
-                {
-                    item.currentState = AttachmentState.Detached;
+                    InteractibleItem tool = carriedItem.GetComponent<InteractibleItem>();
                     
-                    // Find and re-enable the attachment point's collider
-                    AttachmentPoint[] points = FindObjectsOfType<AttachmentPoint>();
-                    foreach (var point in points)
+                    // Try to tighten if loose
+                    if (targetItem.currentState == AttachmentState.Loose)
                     {
-                        if (Vector3.Distance(point.transform.position, item.transform.position) < 0.1f)
+                        if (targetItem.TryTighten(tool.toolType))
                         {
-                            point.DetachItem();
-                            point.EnableCollider();
-                            break;
+                            Debug.Log($"Tightened {targetItem.gameObject.name}");
+                            return;
                         }
                     }
-                    item.currentState = AttachmentState.Detached;
-                    HandleItemPickup(item);
-                }
-                else if (item.currentState == AttachmentState.Detached)
-                {
-                    HandleItemPickup(item);
+                    // Try to loosen if fixed
+                    else if (targetItem.currentState == AttachmentState.Fixed)
+                    {
+                        if (targetItem.TryLoosen(tool.toolType))
+                        {
+                            Debug.Log($"Loosened {targetItem.gameObject.name}");
+                            return;
+                        }
+                    }
                 }
             }
         }
     }
+if (Time.time - lastDropTime < dropCooldown) return;
+
+    if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, interactRange))
+    {
+        InteractibleItem item = hit.collider.GetComponent<InteractibleItem>();
+        if (item != null)
+        {
+            // First check if the item can be interacted with
+            if (!item.canBePickedUp)
+            {
+                if (item.isPushable)
+                {
+                    Vector3 pushDirection = Camera.main.transform.forward;
+                    item.Push(pushDirection);
+                }
+                return;
+            }
+
+            // If the item has no attachment type or is detached, treat it as a regular pickup
+            if (string.IsNullOrEmpty(item.attachmentType) || item.currentState == AttachmentState.Detached)
+            {
+                HandleItemPickup(item);
+                return;
+            }
+
+            // If the item is loose, handle it directly
+            if (item.currentState == AttachmentState.Loose)
+            {
+                Debug.Log($"Found loose item {item.name}, detaching it");
+                // Find and re-enable the attachment point's collider
+                AttachmentPoint[] points = FindObjectsOfType<AttachmentPoint>();
+                foreach (var point in points)
+                {
+                    if (Vector3.Distance(point.transform.position, item.transform.position) < 0.1f)
+                    {
+                        point.DetachItem();
+                        point.EnableCollider();
+                        break;
+                    }
+                }
+                
+                item.currentState = AttachmentState.Detached;
+                HandleItemPickup(item);
+                return;
+            }
+
+            // Only check for assembly if the item is fixed
+            if (item.currentState == AttachmentState.Fixed && IsPartOfAssembledItem(item))
+            {
+                Transform root = item.transform.root;
+                HandleAssemblyPickup(root.gameObject);
+                return;
+            }
+
+            // Check state before allowing pickup
+            if (item.currentState == AttachmentState.Fixed)
+            {
+                Debug.Log("Cannot pick up fixed item - must be loosened first");
+                return;
+            }
+        }
+
+        // Check for attachment points
+        AttachmentPoint attachmentPoint = hit.collider.GetComponent<AttachmentPoint>();
+        if (attachmentPoint != null && carriedItem != null)
+        {
+            InteractibleItem carriedInteractible = carriedItem.GetComponent<InteractibleItem>();
+            if (carriedInteractible != null && carriedInteractible.attachmentType == attachmentPoint.acceptedType)
+            {
+                AttachItemToPoint(carriedInteractible, attachmentPoint);
+                return;
+            }
+        }
+    }
+
+    // If we hit nothing and are carrying an item, drop it
+    if (carriedItem != null)
+    {
+        DropCarriedItem();
+    }
+}
 
     private void AttachItemToPoint(InteractibleItem item, AttachmentPoint point)
     {
@@ -527,7 +522,7 @@ private void HandleAssemblyPickup(GameObject assembly)
 
     Debug.Log($"Found {partsToDetach.Count} loose parts to detach");
 
-    // Detach all loose parts
+    // Detach all loose parts before picking up the assembly
     foreach (GameObject partToDetach in partsToDetach)
     {
         InteractibleItem detachingPart = partToDetach.GetComponent<InteractibleItem>();
@@ -548,13 +543,17 @@ private void HandleAssemblyPickup(GameObject assembly)
                 }
             }
 
-            // Add Rigidbody for physics
-            Rigidbody rb = partToDetach.AddComponent<Rigidbody>();
-            rb.isKinematic = false;
-            rb.useGravity = true;
+            // Unparent before adding physics components
+            partToDetach.transform.SetParent(null);
             
-            // Unparent and set state
-            partToDetach.transform.parent = null;
+            // Add Rigidbody for physics if it doesn't exist
+            if (!partToDetach.GetComponent<Rigidbody>())
+            {
+                Rigidbody rb = partToDetach.AddComponent<Rigidbody>();
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
+            
             detachingPart.currentState = AttachmentState.Detached;
             Debug.Log($"Set {detachingPart.name} state to Detached");
             
@@ -571,25 +570,21 @@ private void HandleAssemblyPickup(GameObject assembly)
     Vector3 worldPosition = assembly.transform.position;
     Quaternion worldRotation = assembly.transform.rotation;
 
-    // Handle all remaining Rigidbodies in the assembly
+    // Remove any existing Rigidbodies from the remaining assembly parts
     Rigidbody[] rigidbodies = assembly.GetComponentsInChildren<Rigidbody>();
     foreach (Rigidbody rb in rigidbodies)
     {
-        // For fixed parts and the parent, we'll destroy their Rigidbodies
-        // They'll get new ones when dropped
         Destroy(rb);
     }
 
     // Keep all colliders enabled for the assembled object
     carriedItem = assembly;
-    Transform targetCarryPoint = carryPosition;
-    carriedItem.transform.SetParent(targetCarryPoint);
+    carriedItem.transform.SetParent(carryPosition);
     
     // Restore world position and rotation
     carriedItem.transform.position = worldPosition;
     carriedItem.transform.rotation = worldRotation;
 }
-
     void StoreInActionBar(InteractibleItem item, int targetSlot)
     {
         if (actionBarUI == null)
@@ -758,59 +753,68 @@ private bool IsPartOfAssembledItem(InteractibleItem item)
 
 public void DropCarriedItem()
 {
-    if (carriedItem)
-    {
-        // Get all InteractibleItems in the assembly
-        InteractibleItem[] items = carriedItem.GetComponentsInChildren<InteractibleItem>();
-        bool isAssembly = items.Length > 1;
+    if (carriedItem == null) return;
 
-        if (isAssembly)
+    // Get all InteractibleItems in the assembly
+    InteractibleItem[] items = carriedItem.GetComponentsInChildren<InteractibleItem>();
+    bool isAssembly = items.Length > 1;
+
+    if (isAssembly)
+    {
+        // Make sure we have a Rigidbody on the root object
+        Rigidbody rootRb = carriedItem.GetComponent<Rigidbody>();
+        if (rootRb == null)
         {
-            // Add a Rigidbody to the root object only
-            Rigidbody rootRb = carriedItem.AddComponent<Rigidbody>();
-            rootRb.isKinematic = false;
-            rootRb.useGravity = true;
-            rootRb.mass = 10f; // Adjust mass as needed
-            rootRb.drag = 1f;
-            rootRb.angularDrag = 0.5f;
+            rootRb = carriedItem.AddComponent<Rigidbody>();
+        }
+        rootRb.isKinematic = false;
+        rootRb.useGravity = true;
+        rootRb.mass = 10f; // Adjust mass as needed
+        rootRb.drag = 1f;
+        rootRb.angularDrag = 0.5f;
+        
+        if (Camera.main != null)
+        {
             rootRb.velocity = Camera.main.transform.forward * 2f;
         }
-        else
+    }
+    else
+    {
+        // Single item handling
+        Rigidbody rb = carriedItem.GetComponent<Rigidbody>();
+        if (rb == null)
         {
-            // Single item handling
-            Rigidbody rb = carriedItem.GetComponent<Rigidbody>();
-            if (rb == null)
-            {
-                rb = carriedItem.AddComponent<Rigidbody>();
-            }
-            rb.isKinematic = false;
-            rb.useGravity = true;
+            rb = carriedItem.AddComponent<Rigidbody>();
+        }
+        rb.isKinematic = false;
+        rb.useGravity = true;
+        
+        if (Camera.main != null)
+        {
             rb.velocity = Camera.main.transform.forward * 2f;
         }
-
-        // Re-enable colliders
-        Collider[] colliders = carriedItem.GetComponentsInChildren<Collider>();
-        foreach (Collider col in colliders)
-        {
-            col.enabled = true;
-        }
-
-        carriedItem.transform.SetParent(null);
-
-        // Remove from action bar if it's there
-        int currentSlot = actionBarUI.GetSelectedSlot();
-        if (currentSlot < actionBar.Count && actionBar[currentSlot] == carriedItem)
-        {
-            actionBar[currentSlot] = null;
-            actionBarUI.UpdateActionBarUI(actionBar);
-        }
-
-        carriedItem = null;
     }
+
+    // Re-enable colliders
+    Collider[] colliders = carriedItem.GetComponentsInChildren<Collider>();
+    foreach (Collider col in colliders)
+    {
+        col.enabled = true;
+    }
+
+    carriedItem.transform.SetParent(null);
+
+    // Remove from action bar if it's there
+    int currentSlot = actionBarUI.GetSelectedSlot();
+    if (currentSlot < actionBar.Count && actionBar[currentSlot] == carriedItem)
+    {
+        actionBar[currentSlot] = null;
+        actionBarUI.UpdateActionBarUI(actionBar);
+    }
+
+    lastDropTime = Time.time;
+    carriedItem = null;
 }
-
-
-
 
     void UseActionBarItem(int index)
     {
