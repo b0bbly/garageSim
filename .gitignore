@@ -1,0 +1,35 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+UserSettings/
+MemoryCaptures/
+
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+*.pdb
+*.mdb
+*.opendb
+
+*.VC.db
+*.DS_Store
+*.apk
+*.aab
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Ignore prototype junk
+SBPrototypeEnvironment_SRP/
+Assets/SBPrototypeEnvironment_SRP/
