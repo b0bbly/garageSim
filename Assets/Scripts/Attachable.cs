@@ -6,7 +6,7 @@ public class Attachable : MonoBehaviour
 {
     public AttachmentState currentState = AttachmentState.Fixed;
     public string requiredToolType = "Wrench"; // Tool type needed to loosen/tighten
-    public string attachmentType = "CarDoor"; // What type of part this is
+    public AttachmentType attachmentType = AttachmentType.CarDoorFront; // What type of part this is
     
     [SerializeField] private GameObject previewPrefab; // Semi-transparent version of the object
     private GameObject activePreview;

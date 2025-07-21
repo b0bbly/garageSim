@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_35;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_35;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;GAIA_CINEMACHINE;GAIA_INPUT_SYSTEM;GAIA_2023;GAIA_MESH_PRESENT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -59,35 +59,209 @@
     <UnityVersion>2022.3.35f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\b0b\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\b0b\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.1.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.SourceGenerators.dll" />
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Scripts\LightingPresetURP.cs" />
+    <Compile Include="Assets\SBPrototypeEnvironment_SRP\Scripts\PlayerController\LookWithMouse.cs" />
     <Compile Include="Assets\Models\WorkBench_01\materials.cs" />
+    <Compile Include="Assets\Scripts\VehicleController.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\POISpawnPointEditor.cs" />
+    <Compile Include="Assets\SBPrototypeEnvironment_SRP\Scripts\PlayerController\SimpleCameraController.cs" />
+    <Compile Include="Assets\MapEditor\Scripts\RoadEditor.cs" />
+    <Compile Include="Assets\Scripts\VehicleChassis.cs" />
     <Compile Include="Assets\StarterAssets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\Procedural Worlds\Frameworks\Setup1\Scripts\SetupSettings.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualTouchZone.cs" />
     <Compile Include="Assets\Scripts\CameraMount.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Scripts\EnvironmentBuiltInURP.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualButton.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Controller Support\Scripts\GRC_ControllerSupport.cs" />
     <Compile Include="Assets\Scripts\InteractibleItem.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\POISpawnGizmo.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\VirtualInputs\UIVirtualJoystick.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\POIInstance.cs" />
     <Compile Include="Assets\Scripts\Crosshaircontroller.cs" />
+    <Compile Include="Assets\MapEditor\Scripts\MapEditor.cs" />
+    <Compile Include="Assets\Scripts\PersistenceDataStructures.cs" />
     <Compile Include="Assets\Scripts\Bolt.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\BasicRigidBodyPush.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Controller Support\Scripts\GRC_ControllerSettings.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Gaia Water\Scripts\GRC_Water.cs" />
+    <Compile Include="Assets\Scripts\PersistentObject.cs" />
+    <Compile Include="Assets\Scripts\CarSeat.cs" />
+    <Compile Include="Assets\Scripts\FlashlightController.cs" />
+    <Compile Include="Assets\Procedural Worlds\Frameworks\Setup1\Scripts\PWPackageInfo.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Unity URP Water\Scripts\GRC_UnityURPWaterSettings.cs" />
     <Compile Include="Assets\Scripts\AttachmentPoint.cs" />
+    <Compile Include="Assets\Scripts\SceneTransitionTrigger.cs" />
     <Compile Include="Assets\Scripts\UseableObject.cs" />
+    <Compile Include="Assets\Scripts\CarControl.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\CanvasInputs\UICanvasControllerInput.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\SceneStateManager.cs" />
+    <Compile Include="Assets\Procedural Worlds\Frameworks\Setup1\Scripts\SetupConstants.cs" />
+    <Compile Include="Assets\Scripts\UseType.cs" />
+    <Compile Include="Assets\itsMakingThings\DynamicDayNightCycle\Scripts\DayNightCycle.cs" />
+    <Compile Include="Assets\Scripts\AssemblyRoot.cs" />
+    <Compile Include="Assets\Procedural Worlds\Frameworks\Setup1\Scripts\SetupUtils.cs" />
+    <Compile Include="Assets\Scripts\CarController.cs" />
+    <Compile Include="Assets\Scripts\StatsUI.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Unity HDRP Water\Scripts\GRC_UnityHDRPWater.cs" />
     <Compile Include="Assets\Scripts\ActionProgressUI.cs" />
+    <Compile Include="Assets\Scripts\MappableButton.cs" />
+    <Compile Include="Assets\Scripts\GearRatio.cs" />
+    <Compile Include="Assets\Scripts\Wheel.cs" />
+    <Compile Include="Assets\Scripts\WheelControl.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Scripts\LightingPresetHDRP.cs" />
+    <Compile Include="Assets\Scripts\HingedItemHingeJointController.cs" />
     <Compile Include="Assets\Scripts\Attachable.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\POISpawnPoint.cs" />
     <Compile Include="Assets\Scripts\PlayerInteraction.cs" />
+    <Compile Include="Assets\Scripts\ItemController.cs" />
+    <Compile Include="Assets\Scripts\ConsumableItem.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\ActionBarUI.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Scripts\LightingPresetBuiltIn.cs" />
+    <Compile Include="Assets\Scripts\PIOGenerator\ItemSpawnPoint.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Unity HDRP Water\Scripts\GRC_UnityHDRPWaterSettings.cs" />
+    <Compile Include="Assets\Scripts\HingedItem.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Unity URP Water\Scripts\GRC_UnityURPWater.cs" />
     <Compile Include="Assets\StarterAssets\Mobile\Scripts\Utilities\MobileDisableAutoSwitchControls.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Gaia Water\Scripts\GRC_WaterSettings.cs" />
+    <Compile Include="Assets\Scripts\Engine.cs" />
+    <Compile Include="Assets\MapEditor\Scripts\RoadGenerator.cs" />
+    <Compile Include="Assets\Scripts\WheelAttachment.cs" />
+    <Compile Include="Assets\Scripts\InteractivePart.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
+    <Compile Include="Assets\Scripts\SeedGenerator\WorldGenerator.cs" />
+    <Compile Include="Assets\Scripts\InteractibleCarComponent.cs" />
+    <Compile Include="Assets\Scripts\CarcomponentAction.cs" />
+    <Compile Include="Assets\Scripts\hingedItem2.cs" />
+    <Compile Include="Assets\Procedural Worlds\Frameworks\Setup1\Scripts\PWPackageConfigSettings.cs" />
+    <Compile Include="Assets\Scripts\EngineAudio.cs" />
+    <Compile Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Scripts\GRC_LightingPresets.cs" />
     <Compile Include="Assets\StarterAssets\FirstPersonController\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\SBPrototypeEnvironment_SRP\Scripts\PlayerController\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\PlayerStats.cs" />
     <Compile Include="Assets\StarterAssets\InputSystem\StarterAssetsInputs.cs" />
     <Compile Include="Assets\StarterAssets\ThirdPersonController\Scripts\ThirdPersonController.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_SkyboxCubemap.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Asset Samples\NatureManufacture\_Readme.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\PowerOf.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Implementation\RidgeImpl.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\None\Billow.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\UnpackUnityTerrain.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\GetTerrainHeights.compute" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\SH_AdditiveBrush.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Asset Samples\README.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_DitherIncludes.hlsl" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterGrowShrink.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Details_Foliage_BuiltIn.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterHeightTransform.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\SH_PolygonFill.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\Generated\NoiseFillNone.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\NoiseCommon.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\None\Voronoi.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\Generated\NoiseFillFbm.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\SubGraphs\PW_FloraIncludes_HDRP.hlsl" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Standard Shaders\StampPreview.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water_Vars.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water_FuncsShared.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Asset Samples - Synty Studios\GeNa Spawners\Readme.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\NoisePreview.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\TreeCollisionMaskBaking.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\SH_MaskPreview.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_General_Forward.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\FBM\Billow.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterImageMask.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Textures\license_readme.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\SubGraphs\PW_FloraIncludes.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Unity URP Water\Readme - License.txt" />
+    <None Include="Assets\itsMakingThings\DynamicDayNightCycle\Shaders\Water.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterStrengthTransform.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\FBM\Ridge.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Asset Samples\3DForge\Documents\Village Exteriors Kit v1.2.1 - user guide.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water_Funcs.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_General_Deferred.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterMixHeight.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Unity URP Water\Shaders\HLSL\Water.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\None\Perlin.hlsl" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Implementation\PerlinImpl.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\None\Ridge.hlsl" />
+    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_SnowFunctions.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water_Under.shader" />
     <None Include="Assets\StarterAssets\license.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Implementation\BillowImpl.hlsl" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Gaia_License_Info.txt" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\Procedural Worlds\Frameworks\Common5\PWCommon5DLL.dll" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\SmoothHeight.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_GeneralVars.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\Generated\NoiseBlitNone.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_GeneralWind.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Standard Shaders\license.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Asset Samples - Synty Studios\Readme.txt" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterSlopeMask.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_GetSnowGlobal.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterDistanceMask.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\None\Value.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\SpawnStamps.compute" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_HDRP_MainLight.hlsl" />
+    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterHeightMask.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Implementation\ValueImpl.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Sky &amp; Lighting Presets\Skyboxes\license_readme.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\FBM\Perlin.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\SimulateSpawnResult.compute" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\CombineCollisionMasks.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Preview.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_URP_MainLight.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Noise.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\SubGraphs\PW_FloraWInd.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\Generated\NoiseBlitFBM.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Details_LitBasic_BuiltIn.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\license.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\SubGraphs\PW_FloraIncludes_URP.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_GeneralWindHDRP.cginc" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\FBM\Voronoi.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Standard Shaders\BaseOperation.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Gaia_ReadMe.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_SkyboxProcedural.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_ChannelCombine.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\GetPreviewHeights.compute" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\PackUnityTerrain.shader" />
+    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\Implementation\VoronoiImpl.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Terrain Operations\FilterFlipY.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_Water_CameraNormals.shader" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\NoiseImpl.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Standard Shaders\SpawnerPreview.shader" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\Unity\Terrain Tools\NoiseLib\FBM\Value.hlsl" />
+    <None Include="Assets\Procedural Worlds\Packages - Install\Gaia\Shaders\PW General\PW_GeneralFuncs.cginc" />
+    <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -422,8 +596,16 @@
       <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.35f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.5\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="PWCommon5DLL">
+      <HintPath>Assets\Procedural Worlds\Frameworks\Common5\PWCommon5DLL.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
@@ -932,50 +1114,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj" />
-    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj" />
     <ProjectReference Include="com.unity.cinemachine.editor.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj" />
     <ProjectReference Include="Unity.Burst.Editor.csproj" />
+    <ProjectReference Include="Unity.Rider.Editor.csproj" />
+    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Config.Runtime.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj" />
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
+    <ProjectReference Include="Unity.Mathematics.Editor.csproj" />
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj" />
+    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj" />
+    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj" />
+    <ProjectReference Include="Unity.Collections.csproj" />
+    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj" />
+    <ProjectReference Include="PPv2URPConverters.csproj" />
+    <ProjectReference Include="Gaia.UnityURPWater.Core.csproj" />
+    <ProjectReference Include="Unity.TextMeshPro.csproj" />
+    <ProjectReference Include="Unity.VSCode.Editor.csproj" />
+    <ProjectReference Include="Barmetler.RoadSystem.Runtime.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Editor.csproj" />
+    <ProjectReference Include="Gaia.UnityURPWater.Editor.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.csproj" />
+    <ProjectReference Include="Unity.EditorCoroutines.Editor.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj" />
     <ProjectReference Include="Unity.Burst.csproj" />
     <ProjectReference Include="Unity.Timeline.Editor.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Shared.Editor.csproj" />
+    <ProjectReference Include="Barmetler.RoadSystem.Editor.csproj" />
     <ProjectReference Include="Unity.ShaderGraph.Editor.csproj" />
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj" />
     <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Core.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Core.Editor.csproj" />
-    <ProjectReference Include="Unity.Rider.Editor.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
-    <ProjectReference Include="Unity.2D.Sprite.Editor.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Universal.Config.Runtime.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Core.Editor.csproj" />
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
-    <ProjectReference Include="Unity.Mathematics.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipeline.Universal.ShaderLibrary.csproj" />
     <ProjectReference Include="Unity.Timeline.csproj" />
     <ProjectReference Include="Unity.InputSystem.csproj" />
     <ProjectReference Include="Unity.InputSystem.ForUI.csproj" />
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.csproj" />
     <ProjectReference Include="Unity.VisualScripting.SettingsProvider.Editor.csproj" />
-    <ProjectReference Include="Unity.Performance.Profile-Analyzer.Editor.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Core.ShaderLibrary.csproj" />
-    <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.csproj" />
     <ProjectReference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj" />
-    <ProjectReference Include="Unity.PlasticSCM.Editor.csproj" />
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj" />
-    <ProjectReference Include="PPv2URPConverters.csproj" />
     <ProjectReference Include="Unity.Mathematics.csproj" />
-    <ProjectReference Include="Unity.TextMeshPro.csproj" />
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj" />
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj" />
     <ProjectReference Include="Unity.Searcher.Editor.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj" />
     <ProjectReference Include="Unity.VisualScripting.State.csproj" />
-    <ProjectReference Include="Unity.VSCode.Editor.csproj" />
     <ProjectReference Include="Cinemachine.csproj" />
-    <ProjectReference Include="Unity.RenderPipelines.Universal.Editor.csproj" />
+    <ProjectReference Include="GaiaCore.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
